@@ -36,7 +36,7 @@ public class NativeAudioAssetComplex implements OnPreparedListener, OnCompletion
         mp.setOnCompletionListener(this);
         mp.setOnPreparedListener(this);
 		mp.setDataSource( afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
-		mp.setAudioStreamType(AudioManager.STREAM_VOICE_CALL; 
+		mp.setAudioStreamType(AudioManager.STREAM_VOICE_CALL);
 		mp.setVolume(volume, volume);
 		mp.prepare();
 	}
